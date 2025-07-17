@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="toDoApp.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1><u>MY TO-DO</u></h1>
+      <div class="head">
+        <input type="text" name="" id="inp" placeholder="Enter Task Here....."/>
+        <button id="btn" onclick="add()">Add</button>
+      </div>
+      <div class="task"></div>
+    </div>
+    <script>
+        let input = document.getElementById("inp");
+        let newtask = document.querySelector(".task");
+      function add() 
+      {
+        if (input.value == "") 
+        {
+          alert("Enter a task to add!!!");
+        } 
+        else 
+        {
+          let newElem = document.createElement("ul");
+          newElem.innerHTML = `${input.value} <i class="fas fa-trash"></i>`;
+          newtask.appendChild(newElem);
+          input.value = "";
+          newElem.querySelector("i").addEventListener("click",remove);
+          function remove()
+          {
+            newElem.remove();
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(39, 39, 99);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.container {
+  width: 500px;
+  background-color: aliceblue;
+  text-align: center;
+  /* margin-left: 31%; */
+  margin-top: 30px;
+  padding: 33px;
+}
+input {
+  width: 350px;
+  padding: 8px;
+  height: 20px;
+  border: 2px solid rgb(39, 39, 99);
+  border-radius: 3px;
+  font-size: 15px;
+  outline: none; 
+box-shadow: 0px 5px 30px -6px rgb(135, 132, 132);
+}
+button {
+  height: 40px;
+  width: 70px;
+  padding: 7px;
+  background-color: rgb(39, 39, 99);
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 5px 30px -6px rgb(135, 132, 132);
+}
+button:hover{
+    font-size: 17px;
+}
+.task ul {
+  width: 435px;
+  background-color: rgb(39, 39, 99);
+  color: white;
+  height: 30px;
+  font-size: 17px;
+  padding: 6px;
+  margin-left: 26px;
+  border-radius: 3px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0px 5px 30px -6px rgb(135, 132, 132);
+}
+.task ul i {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
